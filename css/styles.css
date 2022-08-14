@@ -11477,6 +11477,11 @@ body {
   letter-spacing: 0.0625em;
 }
 
+.thumbnail{
+  object-fit: cover;
+  height: 500px;
+}
+
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
@@ -11550,10 +11555,6 @@ body {
     outline: none;
     border-bottom: 0.25rem solid black;
   }
-}
-
-.mouseclick{
-  cursor: pointer;
 }
 
 .btn {
@@ -11719,4 +11720,36 @@ body {
 #profpho{
   width: 500px;
   height: 500px;
+}
+
+
+.viewmore{
+  color: black;
+  position: relative;
+  bottom: 45px;
+  opacity: 0;
+}
+
+.mouseclick:hover .viewmore{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.mouseclick:hover{
+  background: rgba(255, 255, 255, 1);
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.mouseclick{
+  height: 100%;
+}
+
+.wordpos{
+  margin-top: 40%;
+}
+
+.wordpos2{
+  margin-top: 30%;
 }
